@@ -106,7 +106,7 @@ scplot  <- function(result, fig.path = NULL, fig.name = NULL, fig.format = "png"
     }
 
     if (!all(names(label.xy) %in% c("x.lab", "y.lab"))) {
-      stop("label.xy should be a list of two elements named 'x.lab' ad 'y.lab'!")
+      stop("label.xy should be a list of two elements named 'x.lab' and 'y.lab'!")
     }
 
     if (!all(sapply(c(label.xy$x.lab, label.xy$y.lab), is.character))) {
